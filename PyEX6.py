@@ -17,4 +17,3 @@ elif IMC >= 40 and IMC < 50:
     print("Obesidad III")
 else: 
     print("Obesidad IV")
-    
