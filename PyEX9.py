@@ -5,24 +5,24 @@ class Empleado:
         self.apellido = ""
         self.salario_base = 0
 
-    def calcular_retencion():
-        return self.salario_base * 0.1
-
-    def mostrar_nombre_completo():
-        return self.nombre+""+self.apellido
-
-    def calcular_salario_neto():
+    def calcular_retencion(self):
+        return print("La retencion es de ",self.salario_base * 0.1)
+    def mostrar_nombre_completo(self):
+        return print("nombre completo ",self.nombre+" "+self.apellido)
+    def calcular_salario_neto(self):
         if(self.salario_base <= 828116):
-            aux = 97132
+            A = " SALARIO NETO ",(self.salario_base + 97032)-(self.salario_base*0.1)
         else:
-            aux = 0
-        return self.salario_base + aux
+            A = " SALARIO NETO ",self.salario_base-(self.salario_base*0.1)
+        return print(A)
 
-Empleado.codigo = input("ingrese el codigo")
-Empleado.nombre = input("ingrese el nombre")
-Empleado.apellido = input("ingrese el apellido")
-Empleado.salario_base = int(input("ingrese su salario"))
+a = Empleado()
 
-print("la retencion ", calcular_retencion())
-print("nombre completo ", mostrar_nombre_completo())
-print("salario neto ", calcular_salario_neto())
+a.codigo = input("ingrese el codigo ")
+a.nombre = input("ingrese el nombre ")
+a.apellido = input("ingrese el apellido ")
+a.salario_base = int(input("ingrese su salario "))
+
+a.calcular_retencion()
+a.mostrar_nombre_completo()
+a.calcular_salario_neto()
